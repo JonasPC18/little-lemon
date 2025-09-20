@@ -1,6 +1,6 @@
 {
   "name": "little-lemon",
-  "homepage":"https://github.com/JonasPC18/little-lemon.git",
+  "homepage":"https://jonaspc18.github.io/little-lemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,3 +41,4 @@
     "gh-pages": "^6.3.0"
   }
 }
+
