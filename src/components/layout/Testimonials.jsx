@@ -1,8 +1,20 @@
+import ClientCard from "../cards/ClientCard";
+import clients from "../../data/clients";
+
 export default function Testimonials() {
   return (
     <div>
       <hr/>
-        <h4>Testimonials Section</h4>
+        <h4>Testimonials</h4>
+        {clients.map(client => (
+                <ClientCard
+                    key={client.id}
+                    rating={client.rating}
+                    name={client.name}
+                    image={client.image}
+                    review={client.review}
+                />
+            ))}
       <hr/>
     </div>)
 }
