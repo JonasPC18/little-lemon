@@ -5,7 +5,7 @@ export default function Testimonials() {
   return (
     <div>
       <hr/>
-        <h4>Testimonials</h4>
+        <h2>Testimonials</h2>
         {clients.map(client => (
                 <ClientCard
                     key={client.id}

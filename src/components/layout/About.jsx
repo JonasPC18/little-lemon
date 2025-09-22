@@ -1,5 +1,5 @@
 import restaurantChefB from '../../assets/images/restaurant-chef-B.jpg';
-import restaurant from '../../assets/images/restaurant.jpg';
+import marioAdrian from '../../assets/images/Mario-and-Adrian-b.jpg';
 
 export default function About() {
   return (
@@ -8,6 +8,6 @@ export default function About() {
         <h3>Chicago</h3>
         <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         <img src={restaurantChefB} alt="Restaurant Chef B" width="300px"/> {/* Ajustar depois */}
-        <img src={restaurant} alt="Restaurant" width="300px"/> {/* Ajustar depois */}
+        <img src={marioAdrian} alt="Restaurant" width="300px"/> {/* Ajustar depois */}
     </div>)
 }
