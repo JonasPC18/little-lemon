@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="hero-text">
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
-          <p>We are a family owned Mediterranean  restaurant, focused on traditional recipes served with a modern twist.</p>
+          <p>We are a family owned Mediterranean <br/> restaurant, focused on traditional recipes <br/>served with a modern twist.</p>
           <button>Reserve a Table</button>
         </div>
         <img src={restaurantfood} alt="Restaurant food"/>

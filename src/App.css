@@ -36,11 +36,11 @@ button {
 
 .header img{
   height:53px;
-  grid-column: 3/ span 2;/* começa na coluna 2 e ocupa 2 colunas */
+  grid-column: 4/ span 2;/* começa na coluna 2 e ocupa 2 colunas */
 }
 
 .header nav{
-  grid-column: 6/ span 6;/* começa na coluna 5 e ocupa 6 colunas */
+  grid-column: 6/ span 7;/* começa na coluna 5 e ocupa 6 colunas */
 }
 
 .header nav ul{
@@ -49,10 +49,12 @@ button {
   display: flex;
   gap: 30px;
 }
+
 .header nav ul li a{
   text-decoration: none;
   color:black;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 /* ************************************************************************** */
@@ -66,9 +68,9 @@ button {
 
 .hero img{
   margin-top: 20px;
-  grid-column: 8/ span 3;
-  height: 383px;
-  width: 326px;
+  grid-column: 7/ span 3;
+  height: 450px;
+  width: 390px;
   border-radius: 15px;
 }
 
@@ -76,6 +78,7 @@ button {
   grid-column: 4/ span 3;
   color: white;
   margin-bottom: 150px;
+  white-space: nowrap;
 }
 
 .hero-text h1 {
@@ -84,6 +87,7 @@ button {
   font-weight: bold;
   margin-bottom: 0;
 }
+
 
 .hero-text h3 {
   margin-top: 0;
@@ -94,6 +98,49 @@ button {
 .hero-text p {
   font-size: 20px;
 }
+
+
+@media (max-width: 1640px) {
+.header img{
+  grid-column: 3/ span 2;
+}
+.hero-text {
+  grid-column: 3/ span 3;
+}
+.hero img{
+  grid-column: 8/ span 3;
+}
+}
+
+@media (max-width: 1200px) {
+.header img{
+  grid-column: 2/ span 2;
+}
+.header nav{
+  grid-column: 5/ span 6;
+}
+.hero-text {
+  grid-column: 2/ span 3;
+}
+.hero img{
+  grid-column: 9/ span 3;
+}
+}
+
+@media (max-width: 1000px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
