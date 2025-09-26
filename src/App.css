@@ -11,11 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 button {
   background-color: #F4CE14;
   border:none;
+  height: 60px;
+  width: 200px;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   border-radius:5px;
+  white-space: nowrap;
 }
 
 /* Classe utilitária para criar o grid do figma */
@@ -98,6 +101,31 @@ button {
 .hero-text p {
   font-size: 20px;
 }
+
+/* ************************************************************************** */
+/* Highlights */
+
+.highlights {
+  height: 630px;
+}
+
+.highlights h2 {
+  font-size: 40px;
+  grid-column: 4/ span 4;
+}
+
+.highlights button {
+  grid-column: 8/ span 2;
+}
+
+.highlights-cards {
+  grid-column: 4/ span 6;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+
 
 
 @media (max-width: 1640px) {

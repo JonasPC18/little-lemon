@@ -3,10 +3,10 @@ import dishes from "../../data/dishes"
 
 export default function Highlights() {
   return (
-    <div>
+    <div className="highlights site-grid">
         <h2>This weeks specials!</h2>
         <button>Online Menu</button>
-        <div>
+        <div className="highlights-cards">
             {dishes.map(dish => (
                 <DishCard
                     key={dish.id}
