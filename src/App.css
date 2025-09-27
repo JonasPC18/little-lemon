@@ -24,10 +24,11 @@ button {
 /* Classe utilitária para criar o grid do figma */
 .site-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12 colunas */
+  grid-template-columns: repeat(12, minmax(1px, 90px));
   gap: 20px; /* mesmo gutter do figma */
   padding: 0 70px; /* margem do grid*/
-  align-items: center; /* alinha verticalmente */
+  justify-content: center; /* centraliza horizontalmente a grid inteira */
+  align-content: start;    /* impede mexer no vertical */
 }
 
 /* ************************************************************************** */
@@ -35,15 +36,16 @@ button {
 
 .header{
   height: 100px;
+  align-content: center;
 }
 
 .header img{
   height:53px;
-  grid-column: 4/ span 2;/* começa na coluna 2 e ocupa 2 colunas */
+  grid-column: 3/ span 2;/* começa na coluna 2 e ocupa 2 colunas */
 }
 
 .header nav{
-  grid-column: 6/ span 7;/* começa na coluna 5 e ocupa 6 colunas */
+  grid-column: 6 / 12;/* começa na coluna 5 e ocupa 6 colunas */
 }
 
 .header nav ul{
@@ -70,15 +72,15 @@ button {
 }
 
 .hero img{
-  margin-top: 20px;
-  grid-column: 7/ span 3;
-  height: 450px;
-  width: 390px;
+  margin-top: 40px;
+  grid-column: 8/ span 3;
+  height: 383px;
+  width: 328px;
   border-radius: 15px;
 }
 
 .hero-text {
-  grid-column: 4/ span 3;
+  grid-column: 3/ span 3;
   color: white;
   margin-bottom: 150px;
   white-space: nowrap;
@@ -107,15 +109,17 @@ button {
 
 .highlights {
   height: 630px;
+  align-items: center;
 }
 
 .highlights h2 {
   font-size: 40px;
-  grid-column: 4/ span 4;
+  grid-column: 3/ span 4;
 }
 
 .highlights button {
-  grid-column: 8/ span 2;
+  grid-column: 9/ span 2;
+  justify-self: center; 
 }
 
 .highlights-cards {
@@ -124,41 +128,6 @@ button {
   gap: 30px;
   justify-content: center;
 }
-
-
-
-
-@media (max-width: 1640px) {
-.header img{
-  grid-column: 3/ span 2;
-}
-.hero-text {
-  grid-column: 3/ span 3;
-}
-.hero img{
-  grid-column: 8/ span 3;
-}
-}
-
-@media (max-width: 1200px) {
-.header img{
-  grid-column: 2/ span 2;
-}
-.header nav{
-  grid-column: 5/ span 6;
-}
-.hero-text {
-  grid-column: 2/ span 3;
-}
-.hero img{
-  grid-column: 9/ span 3;
-}
-}
-
-@media (max-width: 1000px){
-
-}
-
 
 
 
