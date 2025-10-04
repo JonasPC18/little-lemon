@@ -1,30 +1,29 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
-import Hero from './components/layout/Hero';
-import Highlights from './components/layout/Highlights';
-import Testimonials from './components/layout/Testimonials';
-import About from './components/layout/About';
 import Footer from './components/layout/Footer';
+import HomePage from './pages/HomePage';
+import BookingPage from './pages/BookingPage';
 
 function App() {
   return (
-  <>
-   <header>
-      <Header />
-    </header>
+    <>
+      <header>
+        <Header />
+      </header>
 
-    <main>
-      <section id="home"><Hero /></section>
-      <section id="menu"><Highlights /></section>
-      <section id="testimonials"><Testimonials /></section>
-      <section id="about"><About/></section>
-    </main>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/booking" element={<BookingPage />} />
+        </Routes>
+      </main>
 
-    <footer>
-      <Footer />
-    </footer>
-</>
-  )
+      <footer>
+        <Footer />
+      </footer>
+    </>
+  );
 }
 
 export default App;

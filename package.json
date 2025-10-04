@@ -1,6 +1,6 @@
 {
   "name": "little-lemon",
-  "homepage":"https://jonaspc18.github.io/little-lemon",
+  "homepage": "https://jonaspc18.github.io/little-lemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-router-dom": "^6.28.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,4 +42,3 @@
     "gh-pages": "^6.3.0"
   }
 }
-
